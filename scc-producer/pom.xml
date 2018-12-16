@@ -52,6 +52,7 @@
   </dependencyManagement>
 
   <build>
+    <finalName>scc-producer</finalName>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>

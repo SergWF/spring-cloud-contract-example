@@ -24,6 +24,7 @@ public class FirstConsumer {
 
   public void add(String value) {
     FirstDao dao = FirstDao.builder().value(Integer.valueOf(value)).build();
+    System.out.println("Added new item: " + dao);
     firstClient.add(dao);
   }
 }
