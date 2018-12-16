@@ -1,0 +1,13 @@
+feign:
+  hystrix:
+    enabled: false
+  client:
+    config:
+      firstClient:
+        url: http://localhost:8080/first
+spring:
+  main:
+    banner-mode: "off"
+
+logging:
+  level.root: warn
