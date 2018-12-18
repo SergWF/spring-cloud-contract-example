@@ -3,8 +3,6 @@ request:
   url: /first/1fe19d91-2cf1-48be-aeba-21674d47ee01
 response:
   status: 200
-  body:
-    id: "1fe19d91-2cf1-48be-aeba-21674d47ee01"
-    value: 1
+  body: "{\"id\" : \"1fe19d91-2cf1-48be-aeba-21674d47ee01\" \"value\": 1}"
   headers:
     Content-Type: application/json;charset=UTF-8

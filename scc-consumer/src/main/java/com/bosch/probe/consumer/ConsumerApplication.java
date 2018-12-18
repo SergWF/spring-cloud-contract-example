@@ -20,7 +20,7 @@ public class ConsumerApplication implements CommandLineRunner {
 
   @Override
   public void run(String... args) throws Exception {
-    String command = args.length >= 1 ? args[0] : null;
+    String command = args.length >= 1 ? args[0] : "help";
     String param = args.length >= 2 ? args[1] : null;
     logger.info("COMMAND LINE RUNNER cmd={}, param={}", command, param);
 
@@ -29,8 +29,9 @@ public class ConsumerApplication implements CommandLineRunner {
         break;
       case "get": firstConsumer.get(param);
         break;
-      default:
-          logger.info("use 'add' or 'get' command");
+      default:logger.info("use 'add' or 'get' command");
+
     }
   }
+
 }

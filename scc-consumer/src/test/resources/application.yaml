@@ -1,0 +1,6 @@
+stubrunner:
+  idsToServiceIds:
+    scc-producer: firstClient
+
+logging:
+  level.root: warn

@@ -1,10 +1,11 @@
 feign:
   hystrix:
     enabled: false
-  client:
-    config:
-      firstClient:
-        url: http://localhost:8080/first
+
+firstClient:
+  ribbon:
+    listOfServers: http://localhost:8080
+
 spring:
   main:
     banner-mode: "off"
